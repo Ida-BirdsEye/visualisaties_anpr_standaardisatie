@@ -1,0 +1,44 @@
+table_id: 4.5_bezoekersgedrag_herkomst
+title: "Bezoekersgedrag – herkomst"
+description: >
+  Deze visualisatie laat zien hoe vaak voertuigen de ZE-zone bezoeken: eenmalig, incidenteel of structureel. Door deze bezoekfrequentie te combineren met herkomstgebieden ontstaat inzicht in vanuit welke regio’s verschillende type bezoekers komen. Gemeenten kunnen deze informatie benutten voor het vormgeven van ontheffingen, communicatie en gerichte beleidsinterventies.
+
+columns:
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Genormaliseerde numerieke code van de zone"
+    type: integer
+
+  - nl_camelcase: zoneNaam
+    eng_snakecase: zone_name
+    description: "Naam van de zone"
+    type: string
+
+  - nl_camelcase: typeBezoeker
+    eng_snakecase: visitor_type
+    description: "Classificatie van bezoekgedrag: Eenmalig, Incidenteel, Dagelijks."
+    type: string
+
+  - nl_camelcase: herkomstProvincie
+    eng_snakecase: origin_province
+    description: "Provincie van registratie van het voertuig (CBS/RDW-verrijking)."
+    type: string
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen binnen de betreffende bezoekcategorie (statistisch beveiligd)."
+    type: integer
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maandnummer van de telling (1–12)."
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar van de telling."
+    type: integer
+
+notes:
+
+wireframe_image: "docs/img/wireframes/4.5_bezoekersgedrag_herkomst.png"

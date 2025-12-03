@@ -1,0 +1,49 @@
+table_id: 4.7_bezoekersgedrag_bedrijfsgrootte
+title: "Bezoekersgedrag – bedrijfsgrootte"
+description: >
+  Deze visualisatie toont hoe voertuigen die de ZE-zone binnenrijden zijn verdeeld naar de bedrijfsgrootte van de kentekenhouder, aangevuld met inzicht in het bezoekgedrag van deze voertuigen. Hiermee wordt zichtbaar welke typen bedrijven (klein, midden of groot) verantwoordelijk zijn voor eenmalige, incidentele of juist structurele bezoeken aan de zone.
+
+columns:
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Genormaliseerde numerieke code van de zone"
+    type: integer
+
+  - nl_camelcase: zoneNaam
+    eng_snakecase: zone_name
+    description: "Naam van de zone"
+    type: string
+
+  - nl_camelcase: typeBezoeker
+    eng_snakecase: visitor_type
+    description: "Classificatie van bezoekgedrag: Eenmalig, Incidenteel, Dagelijks."
+    type: string
+
+  - nl_camelcase: voertuigType
+    eng_snakecase: vehicle_type
+    description: "Voertuigcategorie op basis van RDW-verrijking (bijv. Bestelauto, Vrachtauto)."
+    type: string
+
+  - nl_camelcase: bedrijfsgrootte
+    eng_snakecase: company_size
+    description: "Indeling naar omvang van het bedrijf (Klein, Midden, Groot) op basis van RDW-verrijking."
+    type: string
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen binnen de betreffende combinatie van kenmerken (statistisch beveiligd)."
+    type: integer
+
+  - nl_camelcase: maand
+    eng_snakecase: 
+    description: "Maandnummer (1–12)."
+    type: string
+
+  - nl_camelcase: jaar
+    eng_snakecase: 
+    description: "Kalenderjaar."
+    type: string
+
+notes:
+
+wireframe_image: "docs/img/wireframes/4.7_bezoekersgedrag_bedrijfsgrootte.png"

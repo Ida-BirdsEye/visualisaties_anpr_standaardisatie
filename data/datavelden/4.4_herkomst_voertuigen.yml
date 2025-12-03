@@ -1,0 +1,54 @@
+table_id: 4.4_herkomst_voertuigen
+title: "Herkomst voertuigen"
+description: >
+  Deze visualisatie toont de herkomst van voertuigen, geaggregeerd op provincieniveau of NUTS-3-gebieden, met de geselecteerde ZE-zone als bestemming. Door de gegevens uit te splitsen naar voertuigtype krijgen gemeenten inzicht in uit welke regio’s het verkeer naar de zone afkomstig is en welke voertuigcategorieën hierbij dominant zijn. Dit helpt om logistieke stromen beter te begrijpen en gericht beleid te ontwikkelen voor specifieke doelgroepen of herkomstgebieden.
+
+columns:
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Genormaliseerde numerieke code van de zone"
+    type: integer
+
+  - nl_camelcase: zoneNaam
+    eng_snakecase: zone_name
+    description: "Naam van de zone"
+    type: string
+
+  - nl_camelcase: herkomstNuts3
+    eng_snakecase: origin_nuts3
+    description: "NUTS-3-gebied waar het voertuig geregistreerd staat."
+    type: string
+
+  - nl_camelcase: herkomstProvincie
+    eng_snakecase: origin_province
+    description: "Provincie waar het voertuig geregistreerd staat."
+    type: string
+
+  - nl_camelcase: voertuigType
+    eng_snakecase: vehicle_type
+    description: "Voertuigcategorie op basis van RDW-verrijking (Bestelauto/Vrachtauto)"
+    type: string
+
+  - nl_camelcase: aantalPassages
+    eng_snakecase: passage_count
+    description: "Totaal aantal detecties vanuit de betreffende herkomstregio."
+    type: integer
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen vanuit de herkomstregio (statistisch beveiligd door CBS)."
+    type: integer
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maandnummer (1–12)"
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar"
+    type: integer
+
+notes:
+
+wireframe_image: "docs/img/wireframes/4.4_herkomst_voertuigen.png"

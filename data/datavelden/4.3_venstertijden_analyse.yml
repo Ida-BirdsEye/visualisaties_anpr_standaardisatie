@@ -1,0 +1,64 @@
+table_id: 4.3_venstertijden_analyse
+title: "Venstertijden analyse"
+description: >
+  Deze visualisatie is vergelijkbare met de tijdvak analyse alleen zijn de aantallen geaggregeerd naar de venstertijden, en de tussenliggende blokken, van de betreffende gemeente.
+
+columns:
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Genormaliseerde numerieke code van de zone"
+    type: integer
+
+  - nl_camelcase: zoneNaam
+    eng_snakecase: zone_name
+    description: "Naam van de zone"
+    type: string
+
+  - nl_camelcase: voertuigType
+    eng_snakecase: vehicle_type
+    description: "Voertuigcategorie (RDW-verrijking)"
+    type: string
+
+  - nl_camelcase: aantalPassages
+    eng_snakecase: passage_count
+    description: "Totaal aantal detecties binnen tijdslot"
+    type: integer
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen binnen tijdslot"
+    type: integer
+
+  - nl_camelcase: weekDag
+    eng_snakecase: day_of_week
+    description: "Dag van de week (ISO 1–7)"
+    type: integer
+
+  - nl_camelcase: vensterTijd
+    eng_snakecase: time_window
+    description: "Indeling van het etmaal in gemeente specifieke venstertijden aangegeven in uur van de dag (0–23)"
+    type: string
+
+  - nl_camelcase: SBI08GroepCode
+    eng_snakecase: SBI08_code
+    description: "Numerieke code economische sector op basis van SBI08-groepering (geaggregeerd niveau SBI)."
+    type: string
+
+  - nl_camelcase: SBI08Omschrijving
+    eng_snakecase: SBI08_description
+    description: "Tekstuele omschrijving SBI Groep"
+    type: string
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maandnummer (1–12)"
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar"
+    type: integer
+
+notes:
+
+wireframe_image: "docs/img/wireframes/4.3_venstertijden_analyse.png"

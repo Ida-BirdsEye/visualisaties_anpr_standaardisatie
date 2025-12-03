@@ -1,0 +1,82 @@
+table_id: 4.8_kruisverbanden
+title: "Kruisverbanden"
+description: >
+  In deze views  kunnen relaties tussen verschillende voertuigkenmerken inzichtelijk worden gemaakt. Door kenmerken zoals emissieklasse, voertuigtype, carrosserietype, brandstoftype en sector (SBI) met elkaar te combineren, ontstaat een duidelijk beeld van welke sectoren met welke typen voertuigen rijden, waar nog oudere emissieklassen voorkomen en welke groepen sneller verduurzamen.
+  
+  Dit helpt gemeenten om beleidsvragen rond ZE-maatregelen te beantwoorden. Zo wordt zichtbaar in hoeverre het wagenpark voldoet aan emissie-eisen, welke sectoren het meest worden geraakt door toekomstige aanscherpingen (zoals de overgang naar Euronorm 5 of 6), en hoeveel voertuigen per sector of voertuigcategorie onder deze nieuwe eisen vallen. Daarmee biedt deze view concrete handvatten voor gerichte communicatie, overgangsregelingen en het vormgeven van doelgroepenbeleid.
+
+columns:
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Genormaliseerde numerieke code van de zone"
+    type: integer
+
+  - nl_camelcase: zoneNaam
+    eng_snakecase: zone_name
+    description: "Naam van de zone"
+    type: string
+
+  - nl_camelcase: SBI08GroepCode
+    eng_snakecase: SBI08_code
+    description: "Economische sector van het bedrijf (SBI08, geaggregeerd niveau)."
+    type: string
+
+  - nl_camelcase: SBI08Omschrijving
+    eng_snakecase: SBI08_name
+    description: "Tekstuele omschrijving SBI Groep"
+    type: string
+
+  - nl_camelcase: typeVoertuig
+    eng_snakecase: vehicle_type
+    description: "Voertuigcategorie (bijv. Bestelwagen, Vrachtwagen)."
+    type: string
+
+  - nl_camelcase: typeBrandstof
+    eng_snakecase: fuel_type
+    description: "Brandstofsoort (bijv. Elektrisch, Diesel)."
+    type: string
+
+  - nl_camelcase: emissieklasse
+    eng_snakecase: emissionclasse
+    description: "EURO-emissieklasse (bijv. 3, Z)."
+    type: string
+
+  - nl_camelcase: typeCarrosserie
+    eng_snakecase: body_type
+    description: "Carrosserietype (bijv. Gesloten opbouw, Open laadbak)."
+    type: string
+
+  - nl_camelcase: bedrijfsgrootte
+    eng_snakecase: company_size
+    description: "Indeling naar omvang van het bedrijf (Klein, Midden, Groot) op basis van RDW-verrijking."
+    type: string
+
+  - nl_camelcase: aantalPassages
+    eng_snakecase: passage_count
+    description: "Totaal aantal passages binnen het tijdslot."
+    type: integer
+
+  - nl_camelcase: aantalRitten
+    eng_snakecase: trips_count
+    description: "Aantal ritten binnen de periode (geaggregeerd)."
+    type: integer
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen binnen de periode (statistisch beveiligd)."
+    type: integer
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maandnummer (1–12)."
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar."
+    type: integer
+
+notes:
+  - "Deze tabel wordt gebruikt voor meerdere kruisverband-tabellen in de visualisatie."
+
+wireframe_image: "docs/img/wireframes/4.8_kruisverbanden.png"

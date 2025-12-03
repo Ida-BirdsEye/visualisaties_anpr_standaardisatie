@@ -1,0 +1,3 @@
+cameraId,cameraNaam,latitude,longitude,kijkRichtingGraden,detectieRichting,zoneId,rijRichting,maand,jaar,beschikbaarheidsPercentage
+1,A-Vleutenseweg,52.0907,5.1214,45,Voorzijde,1234,Inbound,2,2025,100
+2,C-Valeriusbaan,52.0940,5.1188,60,Achterzijde,1234,Outbound,3,2025,95

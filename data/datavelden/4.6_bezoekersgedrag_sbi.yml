@@ -1,0 +1,49 @@
+table_id: 4.6_bezoekersgedrag_sbi
+title: "Bezoekersgedrag – SBI"
+description: >
+  Deze visualisatie laat zien hoe voertuigen die de zone binnenrijden zijn verdeeld naar economische sector (SBI-groep), aangevuld met informatie over het bezoekgedrag van voertuigen: eenmalig, incidenteel of regelmatig. Hiermee wordt inzichtelijk welke sectoren structureel in de zone actief zijn, welke sectoren slechts sporadisch aanwezig zijn, en welke sectoren vooral incidentele ritten veroorzaken.
+
+columns:
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Genormaliseerde numerieke code van de zone"
+    type: integer
+
+  - nl_camelcase: zoneNaam
+    eng_snakecase: zone_name
+    description: "Naam van de zone"
+    type: string
+
+  - nl_camelcase: typeBezoeker
+    eng_snakecase: visitor_type
+    description: "Classificatie van bezoekgedrag: Eenmalig, Incidenteel, Dagelijks."
+    type: string
+
+  - nl_camelcase: SBI08GroepCode
+    eng_snakecase: SBI08_code
+    description: "Economische sector van het bedrijf (SBI08, geaggregeerd niveau)."
+    type: string
+
+  - nl_camelcase: SBI08Omschrijving
+    eng_snakecase: SBI08_description
+    description: "Tekstuele omschrijving SBI Groep"
+    type: string
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen binnen de betreffende categorie (statistisch beveiligd)."
+    type: integer
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maandnummer van de telling (1–12)."
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar van de telling."
+    type: integer
+
+notes:
+
+wireframe_image: "docs/img/wireframes/4.6_bezoekersgedrag_sbi.png"

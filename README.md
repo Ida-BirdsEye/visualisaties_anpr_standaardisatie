@@ -1,2 +1,2 @@
-# visualisaties_anpr_standaardisatie
+# anpr-visualisaties
 Documentatie, datamodellen en visualisaties voor ANPR-datastandaardisatie

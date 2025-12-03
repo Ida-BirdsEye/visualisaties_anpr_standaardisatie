@@ -1,0 +1,9 @@
+# Managementsamenvatting
+
+Gemeenten hebben behoefte aan betrouwbare en vergelijkbare inzichten in voertuigenstromen rond zero-emissiezones (ZE-zones). De inzet van automatische kentekenherkenning (ANPR) biedt daarbij nieuwe mogelijkheden, mits de datastromen, tabellen en visualisaties gestandaardiseerd worden. Dit project laat zien hoe verrijkte en statistisch beveiligde ANPR-data van het CBS kunnen worden gebruikt om consistente beleidsvisualisaties te ontwikkelen voor digital twin-omgevingen zoals ArcGIS en Digitwin.
+
+In deze eerste fase zijn wireframes, datavelden en voorbeeldtabellen opgesteld die een referentiekader vormen voor gemeenten, leveranciers en het CBS. De ontwerpen laten zien welke inzichten mogelijk zijn op basis van een uniforme dataset, waaronder tijdpatronen, voertuigtypes, emissieklassen, sectorale herkomst en bezoekgedrag. Deze visualisaties maken duidelijk welke datavelden minimaal vereist zijn om beleidsrelevante analyses mogelijk te maken.
+
+Tijdens het ontwerp zijn belangrijke bevindingen zichtbaar geworden. Zo is de kwaliteit van de inzichten sterk afhankelijk van correcte ZE-zonepolygonen en venstertijden in NDW. Daarnaast blijkt statistische beveiliging een kritieke randvoorwaarde: vooral bij kruisverbanden ontstaan snel kleine cellen, waardoor tabellen opgesplitst moeten worden. Het CBS zal de voorgestelde tabelstructuren verder toetsen.
+
+De opgeleverde visualisatieconcepten, tabellen en aanbevelingen vormen een fundament voor het vervolgtraject: het uniformeren van veldnamen en datamodellen, het verbeteren van datakwaliteit, het ontwikkelen van een API-gestandaardiseerde datastroom en het verder professionaliseren van de ANPR-keten. Hiermee wordt toegewerkt naar een schaalbare nationale standaard waarmee steeds meer gemeenten op een uniforme, veilige en vergelijkbare manier inzicht kunnen verkrijgen in hun stadslogistiek.

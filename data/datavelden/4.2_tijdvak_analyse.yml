@@ -1,0 +1,59 @@
+table_id: 4.2_tijdvak_analyse
+title: "Tijdvak analyse"
+description: >
+  Deze visualisatie laat zien hoeveel voertuigen per tijdvak de ZE-zone inrijden en hoe deze instroom is verdeeld naar voertuigtypen en sectoren (SBI). Dit kan handig zijn wanneer de venstertijden van de gemeente niet beschikbaar zijn voor het CBS.
+
+columns:
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Code van de zone (bij voorkeur numeriek)"
+    type: integer
+
+  - nl_camelcase: voertuigType
+    eng_snakecase: vehicle_type
+    description: "Voertuigcategorie (RDW-verrijking)"
+    type: string
+
+  - nl_camelcase: aantalPassages
+    eng_snakecase: passage_count
+    description: "Totaal aantal detecties binnen tijdslot"
+    type: integer
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen binnen tijdslot"
+    type: integer
+
+  - nl_camelcase: weekDag
+    eng_snakecase: day_of_week
+    description: "Dag van de week (ISO 1–7)"
+    type: integer
+
+  - nl_camelcase: tijdVak
+    eng_snakecase: time_window
+    description: "Indeling van het etmaal in vaste tijdsvakken rondom ochtend en avondspits aangegeven in uur van de dag (0–23)"
+    type: string
+
+  - nl_camelcase: SBI08GroepCode
+    eng_snakecase: SBI08_code
+    description: "Numerieke code economische sector op basis van SBI08-groepering (geaggregeerd niveau SBI)."
+    type: string
+
+  - nl_camelcase: SBI08Omschrijving
+    eng_snakecase: SBI08_description
+    description: "Tekstuele omschrijving SBI Groep"
+    type: string
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maandnummer (1–12)"
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar"
+    type: integer
+
+notes:
+
+wireframe_image: "docs/img/wireframes/4.2_tijdvak_analyse.png"

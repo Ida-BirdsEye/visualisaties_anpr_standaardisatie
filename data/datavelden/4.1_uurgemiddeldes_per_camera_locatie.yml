@@ -1,0 +1,63 @@
+table_id: 4.1_uurgemiddeldes_per_camera_locatie
+title: "Uurgemiddeldes per camera locatie"
+description: >
+  Deze tabel bevat uurgemiddeldes per camera locatie. Door tellingen te koppelen
+  aan locatie, tijd en rijrichting ontstaat een helder beeld van hoe verkeer
+  zich door de dag heen ontwikkelt en helpt dit bij het monitoren van logistiek
+  verkeer per locatie.
+
+columns:
+  - nl_camelcase: cameraId
+    eng_snakecase: camera_id
+    description: "Uniek identificatie nummer van de camera"
+    type: string
+
+  - nl_camelcase: locatie
+    eng_snakecase: location
+    description: "Locatie(naam) van de ANPR camera"
+    type: string
+
+  - nl_camelcase: rijRichtingZone
+    eng_snakecase: zone_travel_direction
+    description: "Richting van de voertuigbeweging t.o.v. ZE-zone (in/uit, inbound/outbound)"
+    type: string
+
+  - nl_camelcase: voertuigType
+    eng_snakecase: vehicle_type
+    description: "Voertuigcategorie (RDW-verrijking)"
+    type: string
+
+  - nl_camelcase: aantalPassages
+    eng_snakecase: passage_count
+    description: "Totaal aantal detecties binnen tijdslot"
+    type: integer
+
+  - nl_camelcase: aantalUniekeVoertuigen
+    eng_snakecase: unique_vehicle_count
+    description: "Aantal unieke voertuigen"
+    type: integer
+
+  - nl_camelcase: weekDag
+    eng_snakecase: day_of_week
+    description: "Dag van de week (ISO 1–7)"
+    type: integer
+
+  - nl_camelcase: uur
+    eng_snakecase: hour_of_day
+    description: "Uur van de dag (0–23)"
+    type: integer
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maandnummer (1–12)"
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar"
+    type: integer
+
+notes:
+  - "Voor het koppelen van de tellingen aan de juiste locatie wordt gebruikgemaakt van een aparte tabel met camera metadata (zie paragraaf 4.12)."
+
+wireframe_image: "docs/img/wireframes/4.1_uurgemiddeldes_per_camera_locatie.png"

@@ -1,0 +1,68 @@
+table_id: 4.12_camera_metadata_en_zone_polygonen
+title: "Camera metadata en zone polygonen"
+description: >
+  Voor een correcte interpretatie van ANPR-detecties is nog een tabel met metadata over de ANPR-camera’s nodig. Het CBS gebruikt deze cameragegevens (locatie en  kijkrichting) in combinatie met de zonepolygonen om te bepalen of een gedetecteerd voertuig de zone inrijdt (inbound) of uitrijdt (outbound).
+  
+  De toedeling van camera’s aan zones gebeurt op basis van de ZE-zone polygonen. Het is de verantwoordelijkheid van gemeenten om te controleren of cameracoördinaten en zonebegrenzingen actueel en correct zijn. De cameracoördinaten worden aangeleverd door de cameraleveranciers, terwijl het CBS de zonepolygonen uit de NDW-George-applicatie haalt. Gemeenten bepalen welke camera’s data aan het CBS wordt geleverd.
+  
+  Deze metadatatabel vormt daarmee niet alleen de basis voor het bepalen van de verkeersrichting ten opzichte van de zone, maar kan ook worden gebruikt voor het visualiseren van camera’s op een kaart in dashboards of digital twins.
+
+columns:
+  - nl_camelcase: cameraId
+    eng_snakecase: camera_id
+    description: "Unieke identificatiecode van de camera."
+    type: integer
+
+  - nl_camelcase: cameraNaam
+    eng_snakecase: camera_name
+    description: "Naam of locatieaanduiding van de camera."
+    type: string
+
+  - nl_camelcase: latitude
+    eng_snakecase: latitude
+    description: "Breedtegraad in WGS84-formaat (decimale graden)."
+    type: string
+
+  - nl_camelcase: longitude
+    eng_snakecase: longitude
+    description: "Lengtegraad in WGS84-formaat (decimale graden)."
+    type: string
+
+  - nl_camelcase: kijkRichtingGraden
+    eng_snakecase: azimuth_deg
+    description: "Oriëntatie van de camera in graden (0–360)."
+    type: string
+
+  - nl_camelcase: detectieRichting
+    eng_snakecase: plate_direction_capability
+    description: "Richting van gedetecteerd verkeer: Kenteken voorzijde (Obverse), kenteken achterzijde (Reverse) of bidirectional."
+    type: string
+
+  - nl_camelcase: zoneId
+    eng_snakecase: zone_id
+    description: "Id van de zone waaraan de camera is gekoppeld."
+    type: integer
+
+  - nl_camelcase: rijRichtingZone
+    eng_snakecase: zone_travel_direction_capability
+    description: "Interpretatie of detecties Inbound (zone in), Outbound (zone uit) of beide kunnen zijn."
+    type: string
+
+  - nl_camelcase: maand
+    eng_snakecase: month
+    description: "Maand waarop de metadata betrekking heeft."
+    type: integer
+
+  - nl_camelcase: jaar
+    eng_snakecase: year
+    description: "Kalenderjaar."
+    type: integer
+
+  - nl_camelcase: beschikbaarheidsPercentage
+    eng_snakecase: uptime_percentage
+    description: "Percentage van de maand dat de camera operationeel was."
+    type: string
+
+notes:
+
+wireframe_image: "docs/img/wireframes/4.12_camera_metadata_en_zone_polygonen.png"
